@@ -30,10 +30,8 @@
 							<div class="site-logo">
 								<?php the_custom_logo(); ?>
 							</div>
-						<?php } ?>
-						<div class="site-title">
-							<h1><?php bloginfo('name'); ?></h1>
-						</div>
+						<?php } ?>	
+						<h1><?php bloginfo('name'); ?></h1>
 				</div>
 				<div id="navbar" class="navbar">
 					<?php
