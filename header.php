@@ -27,16 +27,25 @@
 				<div id="title-header" class="title-header">	
 					<?php
 						if (has_custom_logo()) {?>
-							<div class="site-logo">
 								<?php the_custom_logo(); ?>
 							</div>
 						<?php } ?>	
 						<h1><?php bloginfo('name'); ?></h1>
-				</div>
-				<div id="navbar" class="navbar">
+
 					<?php
 	                	if ( has_nav_menu( 'menu-1' )) {
 	                ?>
+		           <button class="menu-toggle">
+                    	<span class="fa fa-bars">
+						</span>
+                    	<span class="screen-reader-text"><?php
+                    	esc_html_e( 'Main Navigation', 'mimmo' );  
+                    ?>
+                    </span>
+                </button>
+
+                </div>
+				<div id="navbar" class="navbar">
 	                <nav id="site-navigation" class="navigation main-navigation">
 	                    <?php
 	                    wp_nav_menu(

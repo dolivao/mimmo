@@ -9,6 +9,6 @@
 	/* Show/Hide effect site navigation */
 	$( '.menu-toggle' ).click( function () {
 		$( this ).toggleClass( 'open' );
-		$( this ).next( '#site-navigation' ).slideToggle( 'slow' );
-	} );
+		$('.navbar' ).slideToggle( 'slow' );
+	} );	
 } )( jQuery );

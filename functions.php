@@ -52,9 +52,25 @@ function mimmo_scripts_styles() {
     wp_enqueue_script( 'mimmo-script', get_template_directory_uri() . '/assets/js/functions.js', array( 'jquery' ), '1.0', true );
     
     $theme_version = wp_get_theme()->get( 'Version' );
-    // Loads our main stylesheet.
+    
+// Load font awesome stylesheet.
+    wp_enqueue_style( 'mimmo-iconfont', get_template_directory_uri() . '/assets/css/all.css', array(), '', 'all' );
+    
+
+// Loads our main stylesheet.
 	wp_enqueue_style( 'mimmo-style', get_stylesheet_uri(), array(), $theme_version );
 }
 add_action( 'wp_enqueue_scripts', 'mimmo_scripts_styles' );
 
 require get_template_directory() . '/includes/template-tags.php';
+
+// menu sidebar in navbar
+/* 
+function buscador_en_menu($items, $args) {
+    $searchform = get_search_form( false );
+    $items .= '<li>' . $searchform . '</li>'; 
+    return $items; 
+}
+
+add_filter('wp_nav_menu_items','buscador_en_menu', 10, 2);
+*/

@@ -9,7 +9,9 @@
 get_header(); ?>
 
 <main id="main" class="site-main">
-
+        <div class="search-form">
+            <?php get_search_form(); ?>
+        </div>
         <?php 
         if ( have_posts() ) : 
             while ( have_posts() ) : the_post(); ?>
@@ -20,6 +22,7 @@ get_header(); ?>
                     </header>                    
 
                     <div class="entry-content">
+                        
                         <?php the_content(); ?>
                     </div>
 
