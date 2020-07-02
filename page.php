@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for single view
+ * The template for page view
  * 
  * @package WordPress
  * @subpackage Newsroom

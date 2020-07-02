@@ -554,10 +554,12 @@ Site config
   margin: 0.5rem 3rem 0;
 }
 
+
 .site-main article {
   padding: 0 2rem 2rem 2rem;
   line-height: 1.3rem;
 }
+
 .entry-title{
   margin: 1rem;
   padding-left: 1rem;
@@ -566,6 +568,23 @@ Site config
   font-size: 1.2em;
 }
 
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.articles article{
+  border: 1px solid #BABABA;
+  border-radius: 25px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  min-width: 45%;
+}
+
+.entry-thumbnail{
+  float: right;
+  margin: 0.3rem;
+}
 
 /*FOOTER STYLES*/
 footer {
@@ -643,7 +662,7 @@ footer span {
   }
   .navbar {
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: 50px;
     width: 80%;
     border: 1px solid gray;
