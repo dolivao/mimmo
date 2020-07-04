@@ -576,13 +576,15 @@ Site config
 .articles article{
   border: 1px solid #BABABA;
   border-radius: 25px;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  min-width: 45%;
+  margin: 0.3rem;
+  padding: 0.3rem;
+  width: 45%;
+  flex-wrap: wrap;
 }
-
+.entry-data{
+  display: flex;
+}
 .entry-thumbnail{
-  float: right;
   margin: 0.3rem;
 }
 
@@ -645,6 +647,9 @@ footer span {
   display: block;
   padding: 0.2rem 0.5rem 0.7rem 0.5rem;
   font-size: 0.7rem;
+  }
+  .articles article{
+    width: 90%;
   }
 }
 

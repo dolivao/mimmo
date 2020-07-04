@@ -21,16 +21,17 @@ get_header();?>
 	        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	            <?php the_title( sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink())), '</a></h2>'); ?>
+					<div class="entry-data">
+		             <?php if ( has_post_thumbnail() ) : ?>
+	                        <div class="entry-thumbnail">
+	                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail' ); ?></a>
+	                        </div>
+	                 <?php endif; ?>
 
-	             <?php if ( has_post_thumbnail() ) : ?>
-                        <div class="entry-thumbnail">
-                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail' ); ?></a>
-                        </div>
-                 <?php endif; ?>
-
-	            <div class="entry-summary">
-	            <?php the_excerpt(); ?>
-	            </div>
+		            <div class="entry-summary">
+		            <?php the_excerpt(); ?>
+		            </div>
+	        	</div>
 
 	        </article>
 
