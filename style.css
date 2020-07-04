@@ -586,6 +586,8 @@ Site config
 }
 .entry-thumbnail{
   margin: 0.3rem;
+  flex-basis: 30%;
+  flex-shrink: 0;
 }
 
 /*FOOTER STYLES*/
